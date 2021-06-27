@@ -55,3 +55,24 @@ code {
   padding: 10px 20px;
   cursor: pointer;
 }
+
+.add-form {
+  margin: 10px;
+  margin-bottom: 40px;
+}
+
+.form-control {
+  margin: 20px 0;
+}
+
+.form-control label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.form-control input {
+  width: 80%;
+  height: 40px;
+  padding: 3px 7px;
+  font-size: 17px;
+}
