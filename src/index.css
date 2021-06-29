@@ -76,3 +76,13 @@ code {
   padding: 3px 7px;
   font-size: 17px;
 }
+
+.form-control textarea {
+  width: 80%;
+  padding: 3px 7px;
+  font-size: 17px;
+}
+
+.content-input {
+  height: 120px;
+}

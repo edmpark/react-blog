@@ -14,7 +14,7 @@ const AddPost = ({ onAdd }) => {
   };
 
   return (
-    <form className="add-form" onSubmit={onSubmit}>
+    <form className="add-form" name="content" onSubmit={onSubmit}>
       <div className="form-control">
         <label>Title</label>
         <input
@@ -26,11 +26,12 @@ const AddPost = ({ onAdd }) => {
       </div>
       <div className="form-control">
         <label>Content</label>
-        <input
+        <textarea
           type="text"
-          placeholder="Add Blog Content"
+          placeholder="Add Content"
           value={content}
           onChange={(e) => setContent(e.target.value)}
+          rows={6}
         />
       </div>
 
