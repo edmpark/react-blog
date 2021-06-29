@@ -17,17 +17,23 @@ const App = () => {
     },
   ]);
 
+  //Add Post
   const addPost = (post) => {
     const id = Math.floor(Math.random() * 10000) + 1;
     const newPost = { id, ...post };
     setPosts([...posts, newPost]);
   };
 
+  //Delete Post
+  const deletePost = (id) => {
+    setPosts(posts.filter((post) => post.id !== id));
+  };
+
   return (
     <div>
       <Header />
       <AddPost onAdd={addPost} />
-      <Posts posts={posts} />
+      <Posts posts={posts} onDelete={deletePost} />
     </div>
   );
 };
